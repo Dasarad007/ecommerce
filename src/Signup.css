@@ -1,0 +1,20 @@
+#div{
+background-color: beige;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+border: solid rgb(12, 12, 12);
+border-width: 50px;
+color: rgb(1, 1, 1);
+
+}
+#new{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    padding: 200px;
+    
+}

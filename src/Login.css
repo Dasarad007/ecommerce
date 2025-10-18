@@ -1,19 +1,79 @@
-#div{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-border: solid black;
-border-width: 50px;
-color: black;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-#new{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: aqua;
-    padding: 300px;
-    
+
+body {
+  background: linear-gradient(135deg, #8998b3, #aa8fc7);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#div {
+  background-color: #ffffff;
+  width: 400px;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+#div h1 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+#new {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+#new label {
+  color: #444;
+  font-weight: 600;
+}
+
+#new input {
+  padding: 10px 12px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+#new input:focus {
+  border-color: #6a11cb;
+  outline: none;
+  box-shadow: 0 0 6px rgba(106, 17, 203, 0.3);
+}
+
+#new button {
+  background: #6a11cb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+#new button:hover {
+  background: #50119b;
+}
+
+@media (max-width: 480px) {
+  #div {
+    width: 90%;
+    padding: 20px;
+  }
 }
